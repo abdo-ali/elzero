@@ -1,0 +1,70 @@
+/* start variables  */
+:root{
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+   
+}
+/* end variables  */
+/* start global rules  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Cairo", sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small screen  */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* medium screen  */
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* large screen  */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* end global rules  */
+/* Start header */
+header {
+    padding: 20px;
+    
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header .container .logo {
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+header .container .nav {
+    display: flex;
+}
+header .container .nav li {
+    margin-right: 20px;
+}
+/* End header */
